@@ -6,13 +6,44 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
-    protected $fillable = ['name', 'slug', 'parent_id', 'description', 'sort_order'];
+    protected $fillable = [
+        'name',
+        'slug',
+        'parent_id',
+        'description',
+        'sort_order',
+        'image'
+    ];
 
-    // 獲取子分類
+    // 獲取子分類（支持多層）
     public function children()
     {
         return $this->hasMany(Category::class, 'parent_id')
+            ->with('children')  // 遞歸加載所有子分類
             ->orderBy('sort_order', 'asc');
+    }
+
+    // 獲取所有上層分類
+    public function ancestors()
+    {
+        $ancestors = collect();
+        $parent = $this->parent;
+
+        while ($parent) {
+            $ancestors->prepend($parent);
+            $parent = $parent->parent;
+        }
+
+        return $ancestors;
+    }
+
+    // 獲取完整分類路徑名稱
+    public function getFullPathAttribute()
+    {
+        return $this->ancestors()
+            ->pluck('name')
+            ->push($this->name)
+            ->implode(' > ');
     }
 
     // 獲取父分類
@@ -26,7 +57,7 @@ class Category extends Model
     {
         return self::where('parent_id', 0)
             ->orderBy('sort_order')
-            ->with(['children' => function($query) {
+            ->with(['children' => function ($query) {
                 $query->orderBy('sort_order');
             }])
             ->get();
@@ -47,5 +78,14 @@ class Category extends Model
     public function products()
     {
         return $this->hasMany(Product::class);
+    }
+
+    // 獲取圖片完整URL
+    public function getImageUrlAttribute()
+    {
+        if ($this->image) {
+            return asset('storage/categories/' . $this->image);
+        }
+        return asset('images/no-image.png'); // 預設圖片
     }
 }
