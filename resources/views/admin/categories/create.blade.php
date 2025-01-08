@@ -8,7 +8,7 @@
                     <div class="card-header">新增分類</div>
 
                     <div class="card-body">
-                        <form method="POST" action="{{ route('admin.categories.store') }}">
+                        <form method="POST" action="{{ route('admin.categories.store') }}" enctype="multipart/form-data">
                             @csrf
 
                             <div class="mb-3">
@@ -24,13 +24,12 @@
 
                             <div class="mb-3">
                                 <label for="parent_id" class="form-label">上層分類</label>
-                                <select class="form-control @error('parent_id') is-invalid @enderror" 
-                                        id="parent_id" 
-                                        name="parent_id">
+                                <select class="form-control @error('parent_id') is-invalid @enderror" id="parent_id"
+                                    name="parent_id">
                                     <option value="0">無上層分類</option>
-                                    @foreach($parentCategories as $parentCategory)
-                                        <option value="{{ $parentCategory->id }}">
-                                            {{ $parentCategory->name }}
+                                    @foreach ($parentCategories as $category)
+                                        <option value="{{ $category['id'] }}">
+                                            {{ $category['name'] }}
                                         </option>
                                     @endforeach
                                 </select>
@@ -46,6 +45,17 @@
                                 <input type="number" class="form-control @error('sort_order') is-invalid @enderror"
                                     id="sort_order" name="sort_order" value="{{ old('sort_order', 0) }}" required>
                                 @error('sort_order')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="image" class="form-label">分類圖片</label>
+                                <input type="file" class="form-control @error('image') is-invalid @enderror"
+                                    id="image" name="image" accept="image/*">
+                                @error('image')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
