@@ -24,7 +24,7 @@
                                 <label for="image" class="form-label">圖片 (<span class="text-danger">寬度
                                         800px，高度不限</span>)</label>
                                 <input type="file" class="form-control @error('image') is-invalid @enderror"
-                                    id="image" name="image" required>
+                                    id="image" name="image">
                                 @error('image')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
