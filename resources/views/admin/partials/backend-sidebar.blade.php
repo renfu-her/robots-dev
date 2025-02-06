@@ -123,12 +123,12 @@
             </a>
         </li>
 
-        <li class="nav-item">
+        {{-- <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.orders.index') }}">
                 <i class="fas fa-shopping-cart menu-icon"></i>
                 <span class="menu-title">訂單管理</span>
             </a>
-        </li>
+        </li> --}}
 
         <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.about-us.index') }}">
@@ -137,12 +137,12 @@
             </a>
         </li>
 
-        <li class="nav-item">
+        {{-- <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.feedbacks.index') }}">
                 <i class="fas fa-comment menu-icon"></i>
                 <span class="menu-title">反饋管理</span>
             </a>
-        </li>
+        </li> --}}
 
         <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.email-settings.index') }}">
@@ -151,7 +151,7 @@
             </a>
         </li>
 
-        <li class="nav-item">
+        {{-- <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.settings.index') }}">
                 <i class="fas fa-cog menu-icon"></i>
                 <span class="menu-title">運費設定</span>
@@ -163,7 +163,7 @@
                 <i class="fas fa-truck menu-icon"></i>
                 <span class="menu-title">免運設定</span>
             </a>
-        </li>
+        </li> --}}
 
         <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.admins.index') }}">
