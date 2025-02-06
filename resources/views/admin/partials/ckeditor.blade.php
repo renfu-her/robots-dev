@@ -35,7 +35,9 @@
             Table,
             MediaEmbed,
             ImageUpload,
-            SimpleUploadAdapter
+            SimpleUploadAdapter,
+            BlockQuote,
+            SourceEditing
         } from 'ckeditor5';
 
         ClassicEditor
@@ -61,7 +63,9 @@
                     Table,
                     MediaEmbed,
                     ImageUpload,
-                    SimpleUploadAdapter
+                    SimpleUploadAdapter,
+                    BlockQuote,
+                    SourceEditing
                 ],
                 toolbar: {
                     items: [
@@ -74,6 +78,7 @@
                         'outdent', 'indent', '|',
                         'link', 'imageUpload', 'mediaEmbed', '|',
                         'blockQuote', 'insertTable', '|',
+                        'sourceEditing',
                         'undo', 'redo'
                     ]
                 },
