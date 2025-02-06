@@ -31,7 +31,8 @@ use App\Http\Controllers\Admin\{
     FreeShippingController,
     AboutUsController,
     FeedbackController,
-    NewsController
+    NewsController,
+    AlbumController
 };
 
 
@@ -171,4 +172,7 @@ Route::group([
 
     // 最新消息管理
     Route::resource('news', NewsController::class);
+
+    // 相簿管理
+    Route::resource('albums', AlbumController::class);
 });
