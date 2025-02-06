@@ -24,21 +24,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f6f6f6">
-    <link rel="shortcut icon" href="images/layout06-3/common/app_icon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="57x57" href="images/layout06-3/common/app_icon/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/layout06-3/common/app_icon/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/layout06-3/common/app_icon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/layout06-3/common/app_icon/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/layout06-3/common/app_icon/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/layout06-3/common/app_icon/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/layout06-3/common/app_icon/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/layout06-3/common/app_icon/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/layout06-3/common/app_icon/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="images/layout06-3/common/app_icon/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="images/layout06-3/common/app_icon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="images/layout06-3/common/app_icon/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="images/layout06-3/common/app_icon/android-chrome-192x192.png"
-        sizes="192x192">
+    <link rel="shortcut icon" href="{{ asset('frontend/images/layout06-3/common/app_icon/favicon.ico') }}"
+        type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57"
+        href="{{ asset('frontend/images/layout06-3/common/app_icon/apple-touch-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60"
+        href="{{ asset('frontend/images/layout06-3/common/app_icon/apple-touch-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72"
+        href="{{ asset('frontend/images/layout06-3/common/app_icon/apple-touch-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76"
+        href="{{ asset('frontend/images/layout06-3/common/app_icon/apple-touch-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114"
+        href="{{ asset('frontend/images/layout06-3/common/app_icon/apple-touch-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120"
+        href="{{ asset('frontend/images/layout06-3/common/app_icon/apple-touch-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144"
+        href="{{ asset('frontend/images/layout06-3/common/app_icon/apple-touch-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="{{ asset('frontend/images/layout06-3/common/app_icon/apple-touch-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="{{ asset('frontend/images/layout06-3/common/app_icon/apple-touch-icon-180x180.png') }}">
+    <link rel="icon" type="image/png"
+        href="{{ asset('frontend/images/layout06-3/common/app_icon/favicon-16x16.png') }}" sizes="16x16">
+    <link rel="icon" type="image/png"
+        href="{{ asset('frontend/images/layout06-3/common/app_icon/favicon-32x32.png') }}" sizes="32x32">
+    <link rel="icon" type="image/png"
+        href="{{ asset('frontend/images/layout06-3/common/app_icon/favicon-96x96.png') }}" sizes="96x96">
+    <link rel="icon" type="image/png"
+        href="{{ asset('frontend/images/layout06-3/common/app_icon/android-chrome-192x192.png') }}" sizes="192x192">
     <meta name="msapplication-square70x70logo"
         content="https://www.roborobo.com.tw/images/layout06-3/common/app_icon/smalltile.png">
     <meta name="msapplication-square150x150logo"
@@ -47,19 +60,19 @@
         content="https://www.roborobo.com.tw/images/layout06-3/common/app_icon/widetile.png">
     <meta name="msapplication-square310x310logo"
         content="https://www.roborobo.com.tw/images/layout06-3/common/app_icon/largetile.png">
-    <link rel="stylesheet" type="text/css" href="assets/minimalist-basic/content.css">
-    <link rel="stylesheet" type="text/css" href="assets/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/common/share-icon-font/style.css">
-    <link rel="stylesheet" type="text/css" href="font/icon-font/style.css">
-    <link rel="stylesheet" type="text/css" href="css/common/layout06-3/icon-font/style.css">
-    <link rel="stylesheet" type="text/css" href="css/basic.css">
-    <link rel="stylesheet" type="text/css" href="css/editor.css">
-    <link rel="stylesheet" type="text/css" href="css/common/layout06-3/_editor_style.css">
-    <link rel="stylesheet" type="text/css" href="8800/css/common/style.css">
-    <link rel="stylesheet" type="text/css" href="css/common/layout06-3/style.css">
-    <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
-    <script defer="" src="{{ asset('js/modernizr.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('frontend/assets/minimalist-basic/content.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('frontend/assets/ionicons/css/ionicons.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/normalize.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/common/share-icon-font/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('frontend/font/icon-font/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/common/layout06-3/icon-font/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/basic.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/editor.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/common/layout06-3/_editor_style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('frontend/8800/css/common/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/common/layout06-3/style.css') }}">
+    <script src="{{ asset('frontend/js/jquery-3.6.0.min.js') }}"></script>
+    <script defer="" src="{{ asset('frontend/js/modernizr.js') }}"></script>
     <!-- Google tag (gtag.js) -->
     <script async="" src="gtag/js?id=G-M4TNVMBGEZ"></script>
     <script>
@@ -76,9 +89,9 @@
     <script type="text/javascript">
         var csrf_value = 'bca0d35ca8d97438ffd7c3e5a2458000';
     </script>
-    <link rel="stylesheet" href="css/common/index.css">
-    <link rel="stylesheet" href="lib/index.css">
-    <link rel="stylesheet" type="text/css" href="css/common/layout06-3/index.css">
+    <link rel="stylesheet" href="{{ asset('frontend/css/common/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/lib/index.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/common/layout06-3/index.css') }}">
 </head>
 
 <body itemscope="itemscope" itemtype="https://schema.org/WebPage">
@@ -188,7 +201,7 @@
                         </div>
                         <div class="col pic wow fadeInUp" data-wow-delay="0.5s">
                             <img itemprop="image" class="lazyload"
-                                src="{{ asset('images/layout06-3/common/index/about_pic.png') }}"
+                                src="{{ asset('frontend/images/layout06-3/common/index/about_pic.png') }}"
                                 data-src="https://www.roborobo.com.tw/images/layout06-3/common/index/about_pic.png"
                                 alt="關於我們" title="關於我們">
                         </div>
@@ -359,7 +372,7 @@
                                                 <div class="box">
                                                     <h3 class="list-num">01</h3>
                                                     <img alt=""
-                                                        src="{{ asset('images/layout06-3/common/index/service_icon_1.svg') }}">
+                                                        src="{{ asset('frontend/images/layout06-3/common/index/service_icon_1.svg') }}">
                                                     <div class="list-info">
                                                         <h3 class="list-name">創新</h3>
                                                     </div>
@@ -370,7 +383,7 @@
                                                 <div class="box">
                                                     <h3 class="list-num">02</h3>
                                                     <img alt=""
-                                                        src="{{ asset('images/layout06-3/common/index/service_icon_2.svg') }}">
+                                                        src="{{ asset('frontend/images/layout06-3/common/index/service_icon_2.svg') }}">
                                                     <div class="list-info">
                                                         <h3 class="list-name">科技</h3>
                                                     </div>
@@ -381,7 +394,7 @@
                                                 <div class="box">
                                                     <h3 class="list-num">03</h3>
                                                     <img alt=""
-                                                        src="{{ asset('images/layout06-3/common/index/service_icon_3.svg') }}">
+                                                        src="{{ asset('frontend/images/layout06-3/common/index/service_icon_3.svg') }}">
                                                     <div class="list-info">
                                                         <h3 class="list-name">教育</h3>
                                                     </div>
@@ -760,14 +773,14 @@
             </ul>
         </div>
     </div>
-    <script defer="" src="{{ asset('js/jquery.scrollTo/jquery.scrollTo.min.js') }}"></script>
-    <script defer="" src="{{ asset('js/basic.js') }}"></script>
-    <script defer="" src="{{ asset('js/masonry.pkgd.min.js') }}"></script>
-    <script async="" src="{{ asset('js/lazysizes.min.js') }}"></script>
-    <script defer="" src="{{ asset('js/layout06-3/main.js') }}"></script>
-    <link href="js/alertify.js-0.3.11/alertify.core.css" rel="stylesheet">
-    <link href="js/alertify.js-0.3.11/alertify.default.css" rel="stylesheet">
-    <script src="{{ asset('js/alertify.js-0.3.11/alertify.min.js') }}"></script>
+    <script defer="" src="{{ asset('frontend/js/jquery.scrollTo/jquery.scrollTo.min.js') }}"></script>
+    <script defer="" src="{{ asset('frontend/js/basic.js') }}"></script>
+    <script defer="" src="{{ asset('frontend/js/masonry.pkgd.min.js') }}"></script>
+    <script async="" src="{{ asset('frontend/js/lazysizes.min.js') }}"></script>
+    <script defer="" src="{{ asset('frontend/js/layout06-3/main.js') }}"></script>
+    <link href="{{ asset('frontend/js/alertify.js-0.3.11/alertify.core.css') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/js/alertify.js-0.3.11/alertify.default.css') }}" rel="stylesheet">
+    <script src="{{ asset('frontend/js/alertify.js-0.3.11/alertify.min.js') }}"></script>
     <script type="text/javascript">
         function reset() {
             alertify.set({
@@ -795,9 +808,11 @@
             });
         });
     </script>
-    <link rel="stylesheet" href="js/validationEngine/validationEngine.jquery.css" type="text/css">
-    <script src="{{ asset('js/validationEngine/jquery.validationEngine-zh_TW.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('js/validationEngine/jquery.validationEngine.js') }}" type="text/javascript"></script>
+    <link rel="stylesheet" href="{{ asset('frontend/js/validationEngine/validationEngine.jquery.css') }}"
+        type="text/css">
+    <script src="{{ asset('frontend/js/validationEngine/jquery.validationEngine-zh_TW.js') }}" type="text/javascript">
+    </script>
+    <script src="{{ asset('frontend/js/validationEngine/jquery.validationEngine.js') }}" type="text/javascript"></script>
     <script>
         $(document).ready(function(e) {
             $('#form1').validationEngine({
@@ -1039,8 +1054,8 @@
             );
         });
     </script>
-    <script defer="" src="{{ asset('lib/index.js') }}"></script>
-    <script defer="" src="{{ asset('js/layout06-3/album.js') }}"></script>
+    <script defer="" src="{{ asset('frontend/lib/index.js') }}"></script>
+    <script defer="" src="{{ asset('frontend/js/layout06-3/album.js') }}"></script>
 
 </body>
 
