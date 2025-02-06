@@ -1,0 +1,171 @@
+@charset "utf-8";
+/*列表通用 index、news*/
+.news-list .pic:before{
+    display: none;
+}
+.news-list.type1 .item:nth-child(2n){
+    background: #F1F1F1;
+}
+.news-list.type3:before{
+    background: #FFF;
+}
+.news-list.type4 .item .box{
+    transition: all .2s;
+    border:solid 1px #D9D9D9;
+    background: #F9F9F9;
+}
+.news-list .item .box{
+    transition: all .2s;
+    top: 0;
+}
+.news-list.type4 .item .box:hover{
+    top: -10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.16)
+}
+.news-list .item .pic{
+    position: relative;
+    box-sizing: border-box;
+}
+.news-list.type4 .item .box:hover .pic img{
+    opacity: 0.7;
+}
+.news-list.type4 .item .date,
+.news-date{
+    border-radius: 3px;
+    color: #FFFFFF;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 500;
+    background: #1F1F27;
+}
+.news-list.type4 .item .box:hover .date{
+    background: #5947A5;
+}
+.news-list.type4 .item .date{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: -31px 0px 13px;
+    padding: 0;
+    line-height: 1;
+}
+.news-list.type4 .item .date .day{
+    display: block;
+    width: 100%;
+    line-height: 0.8;
+    margin-bottom: -15px;
+    font-size: 35px;
+}
+.news-list .item .name{
+    color: #333333;
+}
+.news-list .box:hover .name{
+    color: #000000;
+}
+.news-list .item .description{
+    color: #8C8C8C;
+}
+.news-list .item .box:hover .description{
+    color: #464646;
+}
+.news-list .btn.more{
+    z-index: 5;
+    overflow-x: hidden;
+    color: #fff !important;
+    background: #BF1330 !important;
+}
+.news-list .btn.more:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    right: 0;
+    background: #334149;
+    background: -moz-linear-gradient(left,  #334149 0%, #37bcf4 100%);
+    background: -webkit-linear-gradient(left,  #334149 0%,#37bcf4 100%);
+    background: linear-gradient(to right,  #334149 0%,#37bcf4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#334149', endColorstr='#37bcf4',GradientType=1 );
+    z-index: -1;
+    transition: all .3s ease;
+}
+.news-list .box:hover .btn.more:before{
+    opacity: 0;
+}
+.news-list.type4 .date {
+    padding-top: 15px;
+}
+@media screen and (max-width: 1000px){
+    .news-list.type4 .item .box:hover{
+        top:0;
+    }
+}
+/*!列表通用 index、news*/
+/*瀑布流*/
+.masonry-list .item:nth-child(n),
+.has-side .masonry-list .item:nth-child(n){
+    clear: none!important;
+}
+/*!瀑布流*/
+/*------------ detail-main ------------*/
+.news-header{
+    display: flex;
+    flex-wrap: wrap;
+}
+.news-date{
+    box-sizing: border-box;
+    font-size: 35px;
+    line-height: 0.5;
+    letter-spacing: -1px;
+    position: relative;
+    z-index: 2;
+    width: 62px;
+    height: 62px;
+    padding-top: 0;
+    border-radius: 3px;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.news-date .day{
+    display: block;
+    width: 100%;
+    line-height: 0.8;
+    margin-bottom: -15px;
+    font-size: 35px;
+}
+.news-date .month{
+    order: 2;
+}
+.news-date .month:before{
+    content: '.'
+}
+.news-date .month,
+.news-date .years{
+    font-size: 12px;
+    line-height: 1;
+    margin-top: 0;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+.share_box{
+    text-align: left;
+    display: block;
+    order: 2;
+    width: 100%;
+}
+.news-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+}
+/*------------ rwd ------------*/

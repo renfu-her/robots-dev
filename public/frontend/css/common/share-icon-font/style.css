@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'community';
+  src:  url('fonts/community.eot');
+  src:  url('fonts/community.eot') format('embedded-opentype'),
+    url('fonts/community.ttf') format('truetype'),
+    url('fonts/community.woff') format('woff'),
+    url('fonts/community.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="community-"], [class*=" community-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'community' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.community-ic-share-x-twitter:before {
+  content: "\ff007";
+}
+.community-common-line:before {
+  content: "\e905";
+}
+.community-common-mail:before {
+  content: "\e900";
+}
+.community-ic-keyword:before {
+  content: "\e2004";
+}
+.community-ic-sharepinterest:before {
+  content: "\e2005";
+}
+.community-ic-shareplurk:before {
+  content: "\e2006";
+}
+.community-ic-share-fb:before {
+  content: "\e2007";
+}
+.community-ic-share-google:before {
+  content: "\e2008";
+}
+.community-ic-share-in:before {
+  content: "\e2009";
+}
+.community-ic-share-line:before {
+  content: "\e2010";
+}
+.community-ic-share-linecall:before {
+  content: "\e2011";
+}
+.community-ic-share-mail:before {
+  content: "\e2012";
+}
+.community-ic-share-t:before {
+  content: "\e2013";
+}
+.community-ic-share-twitter:before {
+  content: "\e2014";
+}
+.community-ic-share-w:before {
+  content: "\e2015";
+}
+.community-ic-share-blog:before {
+  content: "\e2016";
+}
+.community-common-x-twitter:before {
+  content: "\ff006";
+}
+.community-common-weibo:before {
+  content: "\e90c";
+}
+.community-common-whatsapp:before {
+  content: "\e90b";
+}
+.community-common-flickr:before {
+  content: "\e90a";
+}
+.community-common-linkedin:before {
+  content: "\e906";
+}
+.community-common-twitter:before {
+  content: "\e907";
+}
+.community-common-phone:before {
+  content: "\e902";
+}
+.community-common-instagram:before {
+  content: "\e903";
+}
+.community-common-facebook:before {
+  content: "\e904";
+}
+.community-ic-earth:before {
+  content: "\e2000";
+}
+.community-ic-youtube:before {
+  content: "\e2001";
+}
+.community-ic-youtube2:before {
+  content: "\e2002";
+}
+.community-ic-onedrive:before {
+  content: "\e2003";
+}
+.community-common-wechat:before {
+  content: "\e909";
+}
+.community-common-qq:before {
+  content: "\e908";
+}
+.community-common-youtube:before {
+  content: "\e901";
+}

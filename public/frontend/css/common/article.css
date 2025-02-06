@@ -1,0 +1,1062 @@
+@import url(icon-font-34/style.css);
+/*============= 基本樣式  =============*/
+.article-list .item .name {
+    font-size: 18px;
+    line-height: 1.64;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: auto;
+    max-height: 55px;
+    color: #4a4a4a;
+    padding-top: 10px;
+    margin: 0;
+}
+.article-list .item .date{
+    white-space: nowrap;
+}
+.article-list .item .box {
+    margin: 0 auto;
+    position: relative;
+    transition: all .2s;
+    box-sizing: border-box;
+}
+.article-list .item .box .cover {
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+}
+.article-list .Category {
+    display: none;
+}
+.right-item .box{
+    position: relative;
+}
+.right-item .box .cover{
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index:30;
+}
+
+/*new*/
+.right-box{
+    display: none;
+}
+.type1 .article-list .item .box .top_box,
+.type2 .article-list .item .box .top_box  {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    align-items: end;
+}
+.type4 .article-list .item .box .top_box{
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+}
+.type4 .article-list .pic .mask{
+    display: none;
+}
+.keyword_box {
+    color: #666;
+    font-size: 14px;
+    line-height: 2.8em;
+    padding: 9px 0;
+    height: auto;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0px;
+    z-index: 50;
+    word-break: break-all;
+}
+.keyword_box ul {
+    position: relative;
+    word-break: keep-all;
+}
+.type5 .keyword_box ul{
+    word-break: initial;
+}
+.keyword li,
+.keyword li a ,
+.list-h .keyword > li a,
+.list-h .keyword .item a {
+    /*display: inline-block;*/
+    display: inline;
+    /*padding: 0;*/
+    transition: all .2s;
+    text-align: center;
+    width: auto;
+    word-break: break-all;
+    margin-bottom: 3px;
+}
+.type4 .article-list.orig .keyword_box {
+    display: none;
+    border-bottom: 0;
+}
+.keyword li a {
+    border: 1px solid #EFEFEF;
+    background: #EFEFEF;
+    border-radius: 5px;
+    padding: 7px 8px;
+    margin-right: 2px;
+    line-height: 1.4;
+}
+.keyword_box .keyword li a:hover {
+    background: #787B7C;
+    border-color: #787B7C;
+    color: #fff;
+}
+.article-list .pic .mask {
+    opacity: 0;
+    transition: all .2s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-family: 'roboto', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+    transition: all .2s;
+}
+.article-list .item .box:hover .mask{
+    opacity: 1;
+}
+.type4 .article-list .btn.more {
+    background: #DCDEDE;
+    font-family: 'Open Sans';
+    color: #24262C;
+    width: 112px;
+    height: 40px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.type4 .article-list .box:hover .btn.more{
+    background: #24262C;
+    color: #DCDEDE;
+    z-index: 60;
+}
+.type1 .article-list .description,.type2 .article-list .description,
+.type3 .article-list .description,.type4 .article-list .description {
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: 70px;
+    margin: 20px 0 40px;
+    color: #A9A5A3;
+    height: auto;
+}
+.type4 .keyword_box {
+    border-bottom: 1px solid #f5f5f5;
+    padding-bottom: 35px;
+    margin-bottom: 40px;
+}
+/*!new*/
+/*-- 攔位 --*/
+/* 1攔 */
+.column1 .article-list .item {
+    width: 100%;
+}
+
+/* 3攔 */
+.column3 .article-list{
+    margin:  0 -10px;
+}
+.column3 .article-list .item {
+    width: 33.3%;
+    padding: 0 10px;
+}
+
+.column3 .article-list .item:nth-child(3n+1) {
+    clear: left;
+}
+.article-list .item .box{
+    border-color: #f5f5f5;
+}
+.type1 .article-list .item .box {
+    margin: 0 auto 25px;
+    border-style: solid ;
+    border-width: 0 0 1px;
+    padding-bottom: 15px;
+}
+
+.type1 .article-list .item .box .top_box {
+    display: flex;
+}
+
+.type1 .article-list .item .pic {
+    order: 2;
+    max-width: 300px;
+    min-width: 300px;
+
+}
+.type1 .article-list .item .text {
+    margin: 0 10px;
+    order: 1;
+    width: 100%;
+}
+.article-list .text-all {
+    border-color: #AAACAD;
+}
+.type1 .article-list .text-all {
+    margin: 0px 50px 0 180px;
+    text-align: left;
+    border-style: solid;
+    border-width: 0 0 0 1px;
+    height: auto;
+    min-height: 300px;
+    padding: 0 0 0 30px;
+}
+.type1 .article-list .date {
+    font-family: 'Open Sans';
+    position: absolute;
+    font-weight: lighter;
+    font-size: 80px;
+    padding: 40px 25px 0;
+    color: #24262C;
+    line-height: 25px;
+    letter-spacing: -2px;
+    text-align: center;
+}
+.type1 .article-list .date .month,
+.type1 .article-list .date .years {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -1px;
+    margin-top: 5px;
+    font-weight: normal;
+}
+.type1 .article-list .date .day {
+    display: block;
+}
+.type1 .article-list .date .years:before {
+    content: '/';
+}
+
+.type1 .article-list .description {
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: 70px;
+    margin: 20px 0 40px;
+    color: #A9A5A3;
+    height: auto;
+}
+.type1 .article-list .more-box {
+    position: absolute;
+    left: 25px;
+    z-index: 60;
+    bottom: 30px;
+}
+.type1 .article-list .btn.more {
+    background: #DCDEDE;
+    font-family: 'Open Sans';
+    color: #24262C;
+    width: 112px;
+    height: 40px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.type1 .article-list .btn.more:hover {
+    background: #24262C;
+    color: #DCDEDE;
+    z-index: 60;
+}
+
+/*============= style 1 txt+pic end =============*/
+/*============= style 2 pic+txt  =============*/
+
+.type2 .article-list .item .pic {
+    order: 1;
+    max-width: 412px;
+}
+.type2 .article-list .item .box {
+    border: none;
+    margin: 0 auto 65px;
+    padding-bottom: 0;
+}
+.type2 .article-list .item .text {
+    margin: 0 0 0 60px;
+    order: 2;
+    width: 100%;
+    padding: 15px 0 0;
+}
+.type2 .article-list .item:nth-child(even) .pic {
+    order: 2;
+}
+.type2 .article-list .item:nth-child(even) .text {
+    margin: 0 60px 0 0px;
+    order: 1;
+}
+.type2 .article-list .text-all {
+    margin: 0;
+    text-align: left;
+    border: none;
+    padding: 0;
+}
+.type2 .article-list .date {
+    font-family: 'Open Sans';
+    position: relative;
+    font-weight: 600;
+    font-size: 35px;
+    padding: 0;
+    color: #24262C;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 27px;
+    line-height: initial;
+    border-bottom: 4px solid #000;
+    display: block;
+    max-width: 105px;
+    padding-bottom: 5px;
+}
+.type2 .article-list .date .month,
+.type2 .article-list .date .years {
+    font-size: 15px;
+    line-height: inherit;
+    font-weight: 600;
+    letter-spacing: 0px;
+    margin-top: 0px;
+}
+.type2 .article-list .date .day {
+    display: inline-block;
+}
+.type2 .article-list .date .years:before {
+    content: '-';
+    margin: 0 2px;
+}
+.type2 .article-list .description {
+    position: relative;
+    margin: 20px 0 50px;
+}
+.type2 .keyword_box:before {
+    content: '';
+    width: 102px;
+    height: 1px;
+    background: #24262C;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: 0px;
+}
+.type2 .keyword_box {
+    padding: 20px 0
+}
+.keyword_box{
+    border-color:  #24262C;
+}
+.type2 .keyword_box {
+    border-bottom: 1px solid #24262C;
+}
+.type2 .article-list .more-box {
+    display: none;
+}
+/*============= style 2 pic+txt end  =============*/
+/*============= style 3 pic+txt  =============*/
+
+.type3 .article-list .item .pic {
+    order: 1;
+    max-width: 424px;
+}
+.type3 .article-list .item .box {
+    border: none;
+    margin: 0 auto 65px;
+    padding-bottom: 0;
+}
+.type3 .article-list .item .box .top_box {
+    display: block;
+}
+.type3 .article-list .item .text {
+    margin: 0
+}
+.type3 .article-list .text-all {
+    margin: 0;
+    text-align: left;
+    border: none;
+    padding: 0;
+    min-height: inherit;
+}
+.type3 .article-list .item .name {
+    min-height: 53px;
+}
+
+.type3 .article-list .Category-box {
+    display: block;
+}
+
+.type3 .article-list .date .day,
+.type3 .article-list .date .day {
+    display: inline-block;
+}
+.article-list .date{
+     color: #24262C;
+}
+.type3 .article-list .date {
+    position: relative;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0;
+    letter-spacing: inherit;
+    text-align: left;
+    margin: 0;
+    display: flex;
+}
+.type3 .article-list .date .month,
+.type3 .article-list .date .years {
+    font-size: 15px;
+    line-height: inherit;
+    letter-spacing: inherit;
+    margin-top: 0px;
+    font-weight: 600;
+}
+.type3 .article-list .date .years:before {
+    display: none;
+}
+.type3 .article-list .date .month:before,
+.type3 .article-list .date .day:before {
+    content: '-';
+    font-weight: 600;
+    margin: 0 2px;
+}
+.type3 .article-list .date .day {
+    order: 3;
+}
+.type3 .article-list .date .month {
+    order: 2;
+}
+.type3 .article-list .date .years {
+    order: 1;
+}
+.type3 .article-list .description {
+    display: none;
+}
+.type3 .article-list .CandD-box {
+    display: flex;
+    margin: 10px 0 15px;
+}
+.type3 .article-list .Category {
+    display: block;
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+.type3 .article-list .Category+.date:before {
+    content: '';
+    width: 41px;
+    height: 1px;
+    background: #24262C;
+    display: inline-block;
+    margin: 12px 10px;
+}
+.type3 .article-list .more-box {
+    display: none;
+}
+/*-- keyword --*/
+.type3 .article-list .item .keyword_box li {
+    width: auto;
+    padding: 0px;
+}
+
+.type3 .article-list .item:nth-child(3n+1) .keyword_box li {
+    clear: none;
+}
+.type3 .keyword_box:before {
+    content: 'TAG •';
+    font-size: 15px;
+    font-family: '微軟正黑體';
+    font-weight: bolder;
+    color: #000;
+}
+.type3 .keyword_box {
+    margin: 20px 0 0;
+}
+/*============= style 3 pic+txt end  =============*/
+/*============= style 4 NEW-box  =============*/
+.article-box.type4 {
+    display: flex;
+    width: 100%;
+}
+.type4 .right-box{
+    display: block;
+}
+.type4 .article-list.orig {
+    width: 65%;
+    margin-right: 60px;
+}
+.type4 .right-box {
+    display: block;
+    width: 33%;
+}
+.type4 .article-list .item .pic {
+    order: 1;
+    max-width: 340px;
+    max-height: 340px;
+}
+.type4 .article-list .item .text {
+    margin: 0 0 0 30px;
+    order: 2;
+    width: 100%;
+    padding: 0 0 0px;
+    position: relative;
+}
+.type4 .article-list .text-all {
+    margin: 0;
+    text-align: left;
+    border: none;
+    padding: 0 0 40px;
+    min-height: inherit;
+}
+.type4 .article-list .more-box {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.type4 .article-list .date:before {
+    content: '\e902';
+    font-family: 'icon-font-34' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    z-index: 2;
+    color: #24262C;
+}
+.type4 .article-list .date .day,
+.type4 .article-list .date .day {
+    display: inline-block;
+}
+.type4 .CandD-box {
+    margin-top: 90px;
+    position: absolute;
+}
+.type4 .article-list .date {
+    position: relative;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0;
+    color: #24262C;
+    letter-spacing: inherit;
+    text-align: left;
+    padding: 0 0 0 25px;
+    margin: 0;
+    display: flex;
+}
+.type4 .article-list .date .month,
+.type4 .article-list .date .years {
+    font-size: 15px;
+    line-height: inherit;
+    letter-spacing: inherit;
+    margin-top: 0px;
+    font-weight: 600;
+}
+.type4 .article-list .date .years:before {
+    display: none;
+}
+.type4 .article-list .date .month:before,
+.type4 .article-list .date .day:before {
+    content: '-';
+    font-weight: 600;
+    margin: 0 2px;
+}
+.type4 .article-list .date .day {
+    order: 3;
+}
+.type4 .article-list .date .month {
+    order: 2;
+}
+.type4 .article-list .date .years {
+    order: 1;
+}
+.type4 .article-list .item .name {
+    margin-bottom: 60px;
+    min-height: 55px;
+}
+/*-- right --*/
+.type4 .article-list.right-box li .box {
+    padding: 0;
+    border: none;
+    margin-bottom: 20px;
+}
+.type4 .article-list.right-box li .pic {
+    max-width: 130px;
+}
+.type4 .article-list.right-box li .text {
+    margin: 0 0 0 15px;
+}
+.type4 .article-list.right-box li .name {
+    -webkit-line-clamp: 4;
+    height: auto;
+    max-height: 100px;
+    margin-bottom: 0;
+    font-size: 16px;
+    padding-top: 0;
+    word-break: break-word;
+}
+/*-- keyword --*/
+.type4 .article-list.orig .keyword_box {
+    display: none;
+}
+.type4 .right-box .tit {
+    color: #24262C;
+    font-size: 18px;
+    padding-bottom: 10px;
+    display: block;
+    margin-top: -10px;
+    font-family: '微軟正黑體', 'arial';
+}
+.type4 .right-box .right-item .tit b:before {
+    vertical-align: middle;
+}
+.type4 .right-box .tit b:before {
+    content: '●';
+    margin: 5px;
+    font-size: 10px;
+    height: 10px;
+    font-family: 'arial';
+    vertical-align: top;
+}
+.type4 .keyword li a {
+    border: 1px solid #EFEFEF;
+    background: #EFEFEF;
+    margin-right: 4px;
+    padding: 5px 6px;
+}
+.type4 .keyword_box .keyword li a:hover {
+    background: #787B7C;
+    border-color: #787B7C;
+    color: #fff;
+}
+.type4 .keyword_box {
+    border-bottom: 1px solid #f5f5f5;
+    padding-bottom: 35px;
+    margin-bottom: 40px;
+}
+/*============= style 4 NEW-box end =============*/
+/*============= dmo NEW-box start =============*/
+.type5 .article-list .item .box{
+    max-width: 480px;
+    box-sizing: border-box;
+    margin: 0 auto 40px;
+}
+.type5 .article-list .item .pic{
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    position: relative;
+}
+.type5 .article-list .item .text{
+    margin: 0 15px;
+}
+.type5 .article-list .box .cover{
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index:30;
+}
+.type5 .article-list .item .top_box{
+    position: relative;    
+}
+
+.type5 .article-list .item .date{
+    letter-spacing: 0;
+    padding-top: 5px;
+    box-sizing: border-box;
+    font-size: 30px;
+    line-height: 1.2;
+    display: block;
+    text-align: center;
+    margin: -25px 0 13px;
+    position: relative;
+    z-index: 2;
+    width: 62px;
+    height: 62px;
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    justify-content: center;
+    color: #24262C;
+    background: #DCDEDE;
+}
+.type5 .article-list .item .day{
+    width: 100%;
+}
+.type5 .article-list .item .month{
+    order: 2;
+}
+.type5 .article-list .item .month,.type5 .article-list .item .years{
+    font-size: 13px;
+}
+.type5 .article-list .item .years:after{
+    content: '.';
+}
+.type5 .keyword_box{
+    z-index: 80;
+}
+.type5 .keyword_box:before{
+    font-family: 'community' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+    line-height: 14px;
+    float: left;
+    position: absolute;
+    top: 14px;
+    left: 0;
+    content: "\e2004";
+}
+.type5 .article-list .item .more-box{
+     display: none;
+}
+.type5 .article-list .keyword li{
+    padding: 0;
+}
+.type5 .article-list .item .name {
+    display: block;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 21px;
+}
+.type5 .article-list .description {
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 42px;
+    margin: 10px 0 12px;
+    color: #999;
+    line-height: 1.6;
+}
+.type5 .keyword_box {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 9px 0 9px 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+.type5 .keyword li,
+.type5 .keyword li a {
+    display: inline;
+    padding: 0;
+    transition: all .2s;
+    background: none;
+    border:none;
+}
+.type5 .keyword_box .keyword li a:hover{
+    background: none;
+    border-color: transparent;
+}
+.type5 .keyword li+li:before {
+    content: ',';
+}
+/*============= dmo NEW-box end =============*/
+
+@media screen and (max-width: 1000px) {
+    /*============= style 1 txt+pic =============*/
+    .type1 .pic_box {
+        padding: 0;
+        margin: 10px 0 20px;
+    }
+    .type1 .article-list .item .name {
+        font-size: 16px;
+    }
+    .type1 .article-list .text-all {
+        margin: 0px 30px 0 130px;
+        padding: 0px 0 0 20px;
+    }
+    .type1 .article-list .date {
+        font-size: 60px;
+        padding: 15px;
+    }
+    .type1 .article-list .item .text {
+        margin: 0;
+    }
+    .type1 .article-list .date .month,
+    .type1 .article-list .date .years {
+        font-size: 16px;
+    }
+    .type1 .article-list .more-box {
+        left: 0;
+    }
+    /*============= style 1 txt+pic end =============*/
+    /*============= style 2 pic+txt =============*/
+    .type2 .pic_box {
+        padding: 0;
+        margin: 10px 0 20px;
+    }
+    .type2 .article-list .item .name {
+        font-size: 16px;
+    }
+
+    .type2 .article-list .item .text {
+        margin: 0 0 0 30px;
+        padding: 0;
+    }
+    .type2 .article-list .item:nth-child(even) .text {
+        margin: 0 30px 0 0;
+    }
+    .type2 .article-list .date {
+        font-size: 30px;
+        margin-bottom: 10px;
+        max-width: 100px;
+        padding-bottom: 0px;
+    }
+    .type2 .article-list .description {
+        margin: 10px 0 40px;
+    }
+    .type2 .keyword_box {
+        padding: 12px 0
+    }
+    /*============= style 2 txt+pic end =============*/
+    /*============= style 3 pic+txt =============*/
+    .type3 .keyword_box {
+        margin: 15px 0 0;
+    }
+    .type3 .article-list .item {
+        padding: 0 5px;
+    }
+    /*============= style 3 txt+pic end =============*/
+    /*============= style 4 NEW-box  =============*/
+    .column4 .article-list .more-box {
+        bottom: 0px;
+    }
+    .column4 .article-list .item .name {
+        margin-bottom: 40px;
+        -webkit-line-clamp: 1;
+        padding: 0;
+        min-height: 20px;
+    }
+    .column4 .CandD-box {
+        margin-top: 30px;
+    }
+    .column4 .article-list .item .text {
+        margin: 0 0 0 15px;
+    }
+    .column4 .article-list.orig {
+        width: 60%;
+        margin-right: 30px;
+    }
+
+    .type5 .article-list .item .box{
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+   .article-list .keyword_box{
+        display: none;
+    }
+    .article-list .text-all{
+        padding-bottom: 20px;
+    }
+    /*============= style 1 txt+pic =============*/
+    .type1 .article-list .item .box .top_box {
+        display: block;
+    }
+    .type1 .article-list .item .box {
+        margin: 0 auto 20px;
+        padding-bottom: 25px;
+    }
+    .type1 .article-list .text-all {
+        min-height: auto;
+        margin: 0;
+        border-width: 1px 0 0;
+        padding: 10px 0;
+    }
+    .type1 .article-list .item .pic {
+        max-width: inherit;
+        display: none;
+    }
+    .type1 .article-list .date {
+        padding: 0;
+        position: relative;
+        text-align: left;
+        font-size: 33px;
+    }
+    .type1 .article-list .date .day {
+        display: inline-block;
+        margin-right: 3px;
+    }
+    .type1 .article-list .date .month,
+    .type1 .article-list .date .years {
+        letter-spacing: 0px;
+    }
+    .type1 .article-list .more-box {
+        position: relative;
+        bottom: 0;
+    }
+    .type1 .article-list .description {
+        margin: 10px 0 5px;
+    }
+    .article-list .item .name {
+        padding-top: 0;
+    }
+    /*============= style 1 txt+pic end =============*/
+    /*============= style 2 pic+txt =============*/
+    .type2 .article-list .item .box {
+        margin: 0 auto 0px;
+        padding-bottom: 0;
+    }
+    .type2 .article-list .item .pic {
+        display: none;
+    }
+    .type2 .article-list .item .text {
+        margin: 0;
+        padding: 0;
+    }
+    .type2 .article-list .item:nth-child(even) .text {
+        margin: 0;
+    }
+    .type2 .article-list .description {
+        margin: 10px 0 30px;
+    }
+    .type2 .article-list .text-all {
+        padding: 10px 0;
+    }
+    /*============= style 2 pic+txt end =============*/
+    /*============= style 3 pic+txt =============*/
+     .column3 .article-list{
+        margin:  0 -8px;
+     }
+    .column3 .article-list .item {
+        width: 50%;
+        padding: 0 8px;
+    }
+    .column3 .article-list .item:nth-child(3n+1) {
+        clear: none;
+    }
+    .column3 .article-list .item:nth-child(2n+1) {
+        clear: left;
+    }
+    .type3 .article-list .item .pic {
+        max-width: inherit;
+        display: block;
+    }
+    .type3 .keyword_box {
+        margin: 5px 0 0;
+    }
+    .type3 .article-list .item .box {
+        margin: 0 auto 25px;
+    }
+
+    .type3 .article-list .CandD-box {
+        display: block;
+        margin: 10px 0;
+    }
+    .type3 .article-list .Category+.date:before {
+        display: none;
+    }
+    /*--- ---*/
+    .type4 .article-list .item .pic{
+        display: block;
+    }
+    .type4 .article-list.orig {
+        width: 100%;
+        margin-right: 0;
+        order: 2;
+    }
+    .type4 .article-list .item .box {
+        margin: 0 auto 15px;
+        padding-bottom: 15px;
+    }
+    .type4 .right-box {
+        display: block;
+        width: 100%;
+        order: 1;
+        padding-bottom:10px;
+        margin-bottom:25px;
+        border-bottom:1px solid #EFEFEF;
+    }
+    .type4 .article-list .more-box{
+        bottom: 0;
+    }
+     .type4 .article-list .description{
+        margin: 10px 0 20px;
+     }
+    .article-box.type4 {
+        flex-wrap: wrap;
+    }
+    .type4 .keyword_box {
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+    }
+    .type4 .article-list .text-all{
+        padding-bottom: 40px;
+    }
+    .type4 .article-list.right-box li .text {
+        margin-left: 8px;
+    }
+    .type4 .article-list .item .box .top_box{
+        display: flex;
+    }
+    .type4 .right-box .tit {
+            margin:0;
+    }
+    .type5 .article-list .item .text {
+        margin: 0 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .type4 .article-list .item .box {
+        max-width: 340px;
+    }
+    .type4 .article-list .item .box .top_box{
+        display: block;
+    }
+    .type4 .CandD-box{
+        margin-top: 65px;
+    }
+    .type4 .article-list .item .text{
+        margin-left: 0;
+    }
+}

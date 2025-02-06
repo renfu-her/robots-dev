@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*列表通用 index、album*/
+.album-list.type1 .item .box .more:after{
+    color: #fff;
+    background: #334149;
+    background: -moz-linear-gradient(left,  #334149 0%, #37bcf4 100%);
+    background: -webkit-linear-gradient(left,  #334149 0%,#37bcf4 100%);
+    background: linear-gradient(to right,  #334149 0%,#37bcf4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#334149', endColorstr='#37bcf4',GradientType=1 );
+}
+.album-list .item .name{
+    color: #000;
+}
+.masonry-list.album-list.type1 .item{
+    margin-bottom: 0;
+}
+.masonry-list.album-list.type1 .item .name{
+   text-align: left; 
+}
+.masonry-list.album-list.type1 .item .box .more:after{
+    display: none;
+}
+.masonry-list.album-list .item .namebox{
+    position: relative;
+}
+.masonry-list.album-list .item .namebox:after{
+    content: '';
+    display: block;
+    background: url(../../../images/layout06-3/common/index/album_hover.png);
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    right: 12px;
+    top: -26px;
+    z-index: 20;
+    transition: all .3s ease;
+    opacity: 0;
+}
+.masonry-list.album-list.type1 .item .box:hover .namebox:after,
+.masonry-list.album-list.type3 .item .box:hover .namebox:after{
+    opacity: 1;
+}
+.masonry-list.album-list.type4 .item .namebox:after{
+    display: none;
+}
+.masonry-list.album-list.type1 .item .name,
+.masonry-list.album-list.type3 .item .name{
+    padding-right: 60px;
+    position: relative;
+}
+/*!瀑布流*/
+.album-list .item .pic img{
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.album-list .item:hover .pic img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/*------------ rwd ------------*/
+/*!列表通用 index、album*/
+/*瀑布流*/
+.masonry-list .item:nth-child(n),
+.has-side .masonry-list .item:nth-child(n){
+    clear: none!important;
+}
+/*!瀑布流*/

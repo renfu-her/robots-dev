@@ -1,0 +1,430 @@
+@import url(icon-font-34/style.css);
+/*------------ album ------------*/
+/*基本樣式*/
+.album-list .item {
+    margin: 0 auto 30px;
+}
+.album-list .item .box {
+    margin: 0 auto;
+    position: relative;
+    transition: all .2s;
+    box-sizing: border-box;
+}
+.album-list .item{
+    width:33.3%;
+}
+.album-list .item:nth-child(3n+1) {
+    clear: left;
+}
+.album-list .item .box .cover {
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+}
+.album-list .item .pic {
+    overflow: hidden;
+    position: relative;
+}
+.album-list .item .pic img {
+    width: 100%;
+}
+.album-list .item .name {
+    text-align: -webkit-auto;
+    line-height: 1.5;
+    font-size: 16px;
+    height: 25px;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    position: relative;
+    font-weight: bold;
+    margin: 15px 5px 10px;
+}
+.album-list .item .box .more ,.album-list.slick-slider.type1 .item .box .more{
+    text-indent: -9999px;
+    display: none;
+}
+.album-list .item .box .more:after {
+    content: '\10ffff';
+    font-family: 'icon-font-34' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 0px;
+    z-index: 2;
+    color: #fff;
+    background: #000000;
+    border-radius: 50%;
+    text-indent: initial;
+    transition: all .3s;
+    opacity: 0;
+}
+
+.album-list .item .box:hover .more:after {
+    bottom: 0px;
+    opacity: 0;
+}
+/*欄設定*/
+/*1排6欄*/
+.album-list.column6{
+    margin:  0 -15px;
+}
+.album-list.column6 .item {
+    width: 16.6%;
+    padding: 0 15px;
+}
+.album-list.column6 .item:nth-child(3n+1) {
+    clear: none;
+}
+.album-list.column6 .item:nth-child(6n+1) {
+    clear: left;
+}
+/*1排5欄*/
+.album-list.column5 .item:nth-child(3n+1) {
+    clear: none;
+}
+.album-list.column5 .item:nth-child(5n+1) {
+    clear: left;
+}
+.album-list.column5 .item {
+    width: 20%;
+}
+/*1排3欄*/
+.album-list.column3 .item:nth-child(3n+1) {
+    clear: left;
+}
+.album-list.column3 .item {
+    width: 33.3%;
+}
+/*1排4欄*/
+.album-list.column4 .item:nth-child(3n+1) {
+    clear: none;
+}
+.album-list.column4 .item:nth-child(4n+1) {
+    clear: left;
+}
+.album-list.column4 .item {
+    width: 25%;
+}
+/*!欄設定*/
+/*格式設定*/
+/*樣式1*/
+.album-list.type1{
+    margin: 0 -10px;
+}
+.album-list.type1 .item {
+    padding: 0 10px 0px;
+}
+.album-list.type1 .item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 40px;
+}
+.masonry-list.album-list.type1 .item {
+    border-bottom: none;
+}
+.album-list.type1 .item .name {
+    line-height: 1.5;
+    font-size: 16px;
+    height: 50px;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    position: relative;
+    font-weight: bold;
+    margin: 15px 5px 10px;
+}
+.album-list.type1 .item .box .more{
+    display: block;
+}
+.album-list.type1.masonry-list .item .box .more{
+    display: none;
+}
+.album-list.type1 .item .box .more:after {
+    content: '\10ffff';
+    font-family: 'icon-font-34' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 0px;
+    z-index: 2;
+    color: #DCDEDE;
+    background: #000000;
+    border-radius: 50%;
+    text-indent: initial;
+    transition: all .3s;
+    opacity: 0;
+}
+.album-list.type1 .item .box:hover .more:after {
+    bottom: -15px;
+    opacity: 1;
+}
+/*樣式2*/
+.album-list.type2{
+    margin: 0;
+}
+.album-list.type2 .item {
+    padding: 0px;
+}
+.album-list.type2 .item {
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+.album-list.type2 .item .name,
+.album-list.type2 .item .namebox {
+    display: none;
+}
+.album-list.type2 .pic:after {
+    content: '\10ffff';
+    font-family: 'icon-font-34' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 30px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    right: 0;
+    margin: auto;
+    top: 0px;
+    z-index: 3;
+    color: #ffffff;
+    transition: all .3s;
+    opacity: 0;
+}
+
+.album-list.type2 .box:hover .pic:after {
+    top: 45%;
+    opacity: 1;
+}
+
+.album-list.type2 .box .pic:before {
+    content: '';
+    width: 90%;
+    height: 90%;
+    background: rgba(0, 0, 0, 0.62);
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.album-list.type2 .box:hover .pic:before {
+    opacity: 1;
+}
+.album-list.type2 .item .box .more:after,
+.album-list.type2 .item .box .more {
+    display: none;
+}
+/*樣式3*/
+.album-list.type3 .item{
+     padding: 0 10px;
+}
+.album-list.type4 .item {
+    border-bottom: none;
+    margin-bottom: 50px;
+}
+.album-list.type4 .item .box {
+    border: 1px solid #AAACAD;
+    padding: 20px;
+    background: #fff;
+    top: 0;
+    left: 0;
+}
+.album-list.type4 .item .box:hover {
+    top: -10px;
+    left: -10px;
+}
+.album-list.type4 .item .box:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #e1e1e1;
+    position: absolute;
+    display: block;
+    z-index: -1;
+    transition: all .3s;
+}
+.album-list.type4 .item .box:hover:after {
+    left: 10px;
+    top: 10px;
+}
+.album-list.type4 .item .box .more:after {
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    right: 0;
+    left: auto;
+    bottom: 0px;
+    background: #AAACAD;
+    border-radius: 50% 50% 0 50%;
+    opacity: 1;
+}
+.album-list.type4 .item .box:hover .more:after {
+    background: #000000;
+    bottom: 0;
+}
+.album-list.type4 .item .box .more {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.album-list.type4 .item .name {
+    text-align: left;
+    margin: 20px 45px 0 0;
+}
+.album-list.type4 .item:hover .pic img {
+    transform: scale(1);
+}
+/*------------ rwd ------------*/
+@media screen and (max-width: 1280px) {
+    .album-list.column6 .item {
+        width: 25%;
+    }
+    .album-list.column6 .item:nth-child(6n+1) {
+        clear: none;
+    }
+
+    .album-list.column6 .item:nth-child(4n+1) {
+        clear: left;
+    }
+}
+@media screen and (max-width: 1100px) {
+    /*--- 20% ---*/
+    .album-list.column4 .item {
+        width: 25%;
+    }
+    .album-list.column4 .item:nth-child(5n+1) {
+        clear: none;
+    }
+    .album-list.column4 .item:nth-child(4n+1) {
+        clear: left;
+    }
+    /*--- 20% end ---*/
+}
+@media screen and (max-width: 767px) {
+    /*--- 16.6% ---*/
+    .album-list.type1 .item .box {
+        margin-bottom: 0px;
+    }
+    .album-list.column6 .item {
+        width: 33.3%;
+        margin-bottom: 50px;
+    }
+    .album-list.column6 .item:nth-child(4n+1) {
+        clear: none;
+    }
+    .album-list.column6 .item:nth-child(3n+1) {
+        clear: left;
+    }
+    .album-list.type1 .item .name {
+        margin: 5px 0;
+        font-size: 15px;
+        height: 40px;
+    }
+    /*--- 16.6% end ---*/
+    /*--- 20% ---*/
+    .album-list.column5 .item {
+        width: 50%;
+    }
+    .album-list.column5 .item:nth-child(5n+1) {
+        clear: none;
+    }
+     .album-list.column5 .item:nth-child(2n+1) {
+        clear: left;
+    }
+    /*--- 20% end ---*/
+    /*--- 25% ---*/
+    .album-list.column4 .item {
+        width: 50%;
+    }
+    .album-list.column4 .item:nth-child(3n+1) {
+        clear: none;
+    }
+    .album-list.column4 .item:nth-child(2n+1) {
+        clear: left;
+    }
+    .album-list.type3 .item .name {
+        margin-top: 10px;
+    }
+    .album-list.type3 .item .box .more{
+        display: none;
+    }
+    /*--- 25% end---*/
+    .album-list.column3 .item {
+        width: 50%;
+    }
+    .album-list.column3 .item:nth-child(3n+1) {
+        clear: none;
+    }
+    .album-list.column3 .item:nth-child(2n+1) {
+        clear: left;
+    }
+}
+@media screen and (max-width: 480px) {
+    /*--- 16.6% ---*/
+    .album-list.column6 .item {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+    .album-list.column6 .item:nth-child(3n+1) {
+        clear: none;
+    }
+    .album-list.column6 .item:nth-child(2n+1) {
+        clear: left;
+    }
+    /*--- 16.6% end ---*/
+}
