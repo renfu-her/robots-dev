@@ -73,18 +73,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('frontend/css/common/layout06-3/style.css') }}">
     <script src="{{ asset('frontend/js/jquery-3.6.0.min.js') }}"></script>
     <script defer="" src="{{ asset('frontend/js/modernizr.js') }}"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async="" src="gtag/js?id=G-M4TNVMBGEZ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-M4TNVMBGEZ');
-    </script>
+    
     <meta name="msvalidate.01" content="519903A1F2BD9E44343889E4B82F463E">
     <script type="text/javascript">
         var csrf_value = 'bca0d35ca8d97438ffd7c3e5a2458000';
