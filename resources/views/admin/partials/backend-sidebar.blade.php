@@ -60,7 +60,7 @@
 
             </div>
         </li>
-        <li class="nav-item">
+        {{-- <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#product-management" aria-expanded="false">
                 <i class="fas fa-box menu-icon"></i>
                 <span class="menu-title">商品管理</span>
@@ -82,7 +82,7 @@
                     </li>
                 </ul>
             </div>
-        </li>
+        </li> --}}
 
         <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.albums.index') }}">
