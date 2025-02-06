@@ -30,7 +30,8 @@ use App\Http\Controllers\Admin\{
     PostCategoryController,
     FreeShippingController,
     AboutUsController,
-    FeedbackController
+    FeedbackController,
+    NewsController
 };
 
 
@@ -167,4 +168,7 @@ Route::group([
     Route::resource('free-shippings', FreeShippingController::class);
     Route::post('free-shippings/{freeShipping}/toggle-active', [FreeShippingController::class, 'toggleActive'])
         ->name('free-shippings.toggle-active');
+
+    // 最新消息管理
+    Route::resource('news', NewsController::class);
 });

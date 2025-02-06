@@ -110,6 +110,13 @@
         </li>
 
         <li class="nav-item">
+            <a class="nav-link" href="{{ route('admin.news.index') }}">
+                <i class="fas fa-newspaper menu-icon"></i>
+                <span class="menu-title">最新消息維護</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.orders.index') }}">
                 <i class="fas fa-shopping-cart menu-icon"></i>
                 <span class="menu-title">訂單管理</span>
@@ -137,7 +144,7 @@
             </a>
         </li>
 
-          <li class="nav-item">
+        <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.settings.index') }}">
                 <i class="fas fa-cog menu-icon"></i>
                 <span class="menu-title">運費設定</span>
