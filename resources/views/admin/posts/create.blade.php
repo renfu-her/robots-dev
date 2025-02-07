@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">新增關於我們</div>
+                    <div class="card-header">新增文章</div>
 
                     <div class="card-body">
                         <form method="POST" action="{{ route('admin.posts.store') }}" enctype="multipart/form-data">
