@@ -4,7 +4,10 @@
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4">
             <h2>文章管理</h2>
-            <a href="{{ route('admin.posts.create') }}" class="btn btn-primary">新增文章</a>
+            <div class="d-flex gap-2">
+                <a href="{{ route('admin.posts.create') }}" class="btn btn-primary">新增文章</a>
+                <a href="{{ route('admin.post-categories.index') }}" class="btn btn-outline-primary">分類管理</a>
+            </div>
         </div>
 
         @if (session('success'))
@@ -72,7 +75,8 @@
 
 @push('styles')
     <style>
-        .table td img, .jsgrid .jsgrid-table td img {
+        .table td img,
+        .jsgrid .jsgrid-table td img {
             width: 150px !important;
             height: auto !important;
             border-radius: 0 !important;

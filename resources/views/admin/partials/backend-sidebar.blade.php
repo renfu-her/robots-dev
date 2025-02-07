@@ -37,28 +37,10 @@
 
 
         <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#article-management" aria-expanded="false">
+            <a class="nav-link" href="{{ route('admin.posts.index') }}">
                 <i class="fas fa-box menu-icon"></i>
                 <span class="menu-title">文章維護</span>
-                <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="article-management">
-                <ul class="nav flex-column sub-menu">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('admin.post-categories.index') }}">
-                            <i class="fas fa-newspaper menu-icon"></i>
-                            <span class="menu-title">分類維護</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('admin.posts.index') }}">
-                            <i class="fas fa-newspaper menu-icon"></i>
-                            <span class="menu-title">文章維護</span>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
         </li>
         {{-- <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#product-management" aria-expanded="false">
@@ -99,21 +81,10 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#faq-management" aria-expanded="false">
+            <a class="nav-link" href="{{ route('admin.faqs.index') }}">
                 <i class="fas fa-question-circle menu-icon"></i>
                 <span class="menu-title">常見問題維護</span>
-                <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="faq-management">
-                <ul class="nav flex-column sub-menu">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('admin.faq-categories.index') }}">分類管理</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('admin.faqs.index') }}">問題管理</a>
-                    </li>
-                </ul>
-            </div>
         </li>
 
         <li class="nav-item">
